@@ -133,7 +133,7 @@ export const it: Translations = {
         "Allergeni e intolleranze segnalati",
       ],
       image1: "/images/nutrients_DE.png",
-      image2: "/images/nutrients_DE.png",
+      image2: "/images/ingredients_DE.png",
     },
     {
       label: "Cucina",
@@ -146,7 +146,7 @@ export const it: Translations = {
         "Consigli da pro dello chef IA in ogni momento",
       ],
       image1: "/images/cooking_DE.png",
-      image2: "/images/cooking_DE.png",
+      image2: "/images/ask_DE.png",
     },
     {
       label: "Salva",

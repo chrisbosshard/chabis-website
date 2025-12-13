@@ -132,7 +132,7 @@ export const en: Translations = {
         "Allergens & intolerances marked",
       ],
       image1: "/images/nutrients_EN.png",
-      image2: "/images/nutrients_EN.png",
+      image2: "/images/ingredients_EN.png",
     },
     {
       label: "Cooking",
@@ -145,7 +145,7 @@ export const en: Translations = {
         "Pro tips from the AI chef anytime",
       ],
       image1: "/images/cooking_EN.png",
-      image2: "/images/cooking_EN.png",
+      image2: "/images/ask_EN.png",
     },
     {
       label: "Save",
