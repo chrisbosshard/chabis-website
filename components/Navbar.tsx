@@ -2,16 +2,26 @@
 
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import type { Locale } from "@/lib/i18n/config";
 
-const navLinks = [
-  { label: "Features", href: "#features" },
-  { label: "Testimonials", href: "#testimonials" },
-  { label: "FAQ", href: "#faq" },
-];
+interface NavbarProps {
+  t: {
+    features: string;
+    testimonials: string;
+    faq: string;
+  };
+  locale: Locale;
+}
 
-export default function Navbar() {
+export default function Navbar({ t, locale }: NavbarProps) {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const navLinks = [
+    { label: t.features, href: "#features" },
+    { label: t.testimonials, href: "#testimonials" },
+    { label: t.faq, href: "#faq" },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,12 +40,12 @@ export default function Navbar() {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center">
+          <a href={`/${locale}`} className="flex items-center">
             <Image src="/chabis-logo.svg" alt="Chabis Logo" width={120} height={40} className="h-8 md:h-10 w-auto" />
           </a>
 
-          {/* Right side - Navigation Links + CTA */}
-          <div className="flex items-center gap-8">
+          {/* Right side - Navigation Links + Language Switcher */}
+          <div className="flex items-center gap-4 md:gap-8">
             {/* Navigation Links - Desktop */}
             <div className="hidden md:flex items-center gap-8">
               {navLinks.map((link) => (
@@ -44,6 +54,24 @@ export default function Navbar() {
                 </a>
               ))}
             </div>
+
+            {/* Language Switcher */}
+            <div className="flex items-center gap-0.5 text-sm">
+              {(["de", "en", "fr", "it"] as const).map((lang, index) => (
+                <span key={lang} className="flex items-center">
+                  {index > 0 && <span className="text-stone-300 mx-0.5">|</span>}
+                  <a
+                    href={`/${lang}`}
+                    className={`px-1.5 py-1 rounded transition-colors ${
+                      locale === lang ? "text-lime-600 font-semibold" : "text-stone-500 hover:text-stone-700"
+                    }`}
+                  >
+                    {lang.toUpperCase()}
+                  </a>
+                </span>
+              ))}
+            </div>
+
             {/* Mobile Menu Button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
