@@ -245,6 +245,7 @@ export const it: Translations = {
     legal: "Legale",
     faq: "FAQ",
     contact: "Contatto",
+    supportPage: "Aiuto & FAQ",
     privacy: "Privacy",
     terms: "Termini",
     appStoreBadge: "/Download_on_the_App_Store_Badge_IT_RGB_wht_100517.svg",

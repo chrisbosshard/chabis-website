@@ -13,12 +13,12 @@ import { WebsiteSchema, SoftwareAppSchema, OrganizationSchema, FAQSchema } from 
 
 export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
   const { locale: localeParam } = await params;
-  
+
   // Redirect FR/IT to German
   if (!isValidMainLocale(localeParam)) {
     redirect("/de");
   }
-  
+
   const locale: Locale = localeParam;
   const t = getTranslations(locale);
 

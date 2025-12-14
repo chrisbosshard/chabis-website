@@ -8,6 +8,7 @@ interface FooterProps {
     legal: string;
     faq: string;
     contact: string;
+    supportPage: string;
     privacy: string;
     terms: string;
     appStoreBadge: string;
@@ -19,7 +20,7 @@ export default function Footer({ t, locale }: FooterProps) {
   const footerLinks = {
     support: [
       { label: t.faq, href: "#faq" },
-      { label: t.contact, href: `/${locale}/support` },
+      { label: t.supportPage, href: `/${locale}/support` },
     ],
     legal: [
       { label: t.privacy, href: `/${locale}/privacy` },

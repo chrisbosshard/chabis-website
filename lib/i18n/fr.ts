@@ -248,6 +248,7 @@ export const fr: Translations = {
     legal: "Mentions légales",
     faq: "FAQ",
     contact: "Contact",
+    supportPage: "Aide & FAQ",
     privacy: "Confidentialité",
     terms: "Conditions",
     appStoreBadge: "/Download_on_the_App_Store_Badge_FR_RGB_wht_100517.svg",
