@@ -60,9 +60,7 @@ export default async function SupportPage({ params }: { params: Promise<{ locale
         <div className="space-y-10">
           {support.sections.map((section, sectionIndex) => (
             <section key={sectionIndex}>
-              <h3 className="text-lg font-semibold text-stone-800 mb-4 pb-2 border-b border-stone-200">
-                {section.title}
-              </h3>
+              <h3 className="text-lg font-semibold text-stone-800 mb-4 pb-2 border-b border-stone-200">{section.title}</h3>
               <div className="space-y-6">
                 {section.items.map((item, itemIndex) => (
                   <div key={itemIndex}>
@@ -92,12 +90,6 @@ export default async function SupportPage({ params }: { params: Promise<{ locale
           </ul>
         </section>
 
-        {/* App Version */}
-        <section className="mt-8 pt-8 border-t border-stone-200">
-          <h3 className="text-lg font-semibold text-stone-800 mb-2">{support.appVersionTitle}</h3>
-          <p className="text-stone-600">{support.appVersionText}</p>
-        </section>
-
         {/* Back Link */}
         <div className="mt-12 pt-8 border-t border-stone-200">
           <Link href={`/${locale}`} className="text-lime-600 hover:text-lime-700 font-medium">
@@ -109,7 +101,9 @@ export default async function SupportPage({ params }: { params: Promise<{ locale
       {/* Footer */}
       <footer className="bg-stone-900 text-white py-8 mt-16">
         <div className="container mx-auto px-6 text-center">
-          <p className="text-stone-400 text-sm">© {new Date().getFullYear()} Chabis. {t.footer.tagline}</p>
+          <p className="text-stone-400 text-sm">
+            © {new Date().getFullYear()} Chabis. {t.footer.tagline}
+          </p>
         </div>
       </footer>
     </div>
