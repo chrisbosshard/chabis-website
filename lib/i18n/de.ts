@@ -244,7 +244,7 @@ export const de = {
     legal: "Rechtliches",
     faq: "FAQ",
     contact: "Kontakt",
-    supportPage: "Hilfe & FAQ",
+    supportPage: "Support",
     privacy: "Datenschutz",
     terms: "AGB",
     appStoreBadge: "/Download_on_the_App_Store_Badge_DE_RGB_wht_092917.svg",
