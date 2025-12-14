@@ -57,7 +57,7 @@ export default function Navbar({ t, locale }: NavbarProps) {
 
             {/* Language Switcher */}
             <div className="flex items-center gap-0.5 text-sm">
-              {(["de", "en", "fr", "it"] as const).map((lang, index) => (
+              {(["de", "en"] as const).map((lang, index) => (
                 <span key={lang} className="flex items-center">
                   {index > 0 && <span className="text-stone-300 mx-0.5">|</span>}
                   <a

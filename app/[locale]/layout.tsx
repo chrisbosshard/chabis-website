@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { locales, type Locale, isValidLocale } from "@/lib/i18n/config";
+import { mainLocales, isValidLocale } from "@/lib/i18n/config";
 import { getTranslations } from "@/lib/i18n";
 
 const siteUrl = "https://chabis.app";
 
 export async function generateStaticParams() {
-  return locales.map((locale) => ({ locale }));
+  return mainLocales.map((locale) => ({ locale }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {

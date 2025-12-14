@@ -1,5 +1,6 @@
-import { type Locale, isValidLocale } from "@/lib/i18n/config";
+import { type Locale, isValidMainLocale } from "@/lib/i18n/config";
 import { getTranslations } from "@/lib/i18n";
+import { redirect } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import FeatureShowcase from "@/components/FeatureShowcase";
@@ -12,7 +13,13 @@ import { WebsiteSchema, SoftwareAppSchema, OrganizationSchema, FAQSchema } from 
 
 export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
   const { locale: localeParam } = await params;
-  const locale: Locale = isValidLocale(localeParam) ? localeParam : "de";
+  
+  // Redirect FR/IT to German
+  if (!isValidMainLocale(localeParam)) {
+    redirect("/de");
+  }
+  
+  const locale: Locale = localeParam;
   const t = getTranslations(locale);
 
   return (

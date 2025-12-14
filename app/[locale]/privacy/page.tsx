@@ -1,8 +1,12 @@
-import { type Locale, isValidLocale } from "@/lib/i18n/config";
+import { type Locale, isValidLocale, locales } from "@/lib/i18n/config";
 import { getLegalTranslations } from "@/lib/i18n/legal";
 import { getTranslations } from "@/lib/i18n";
 import Link from "next/link";
 import Image from "next/image";
+
+export async function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
+}
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale: localeParam } = await params;
