@@ -15,6 +15,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     });
     routes.push({
+      url: `${baseUrl}/${locale}/support`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    });
+    routes.push({
       url: `${baseUrl}/${locale}/privacy`,
       lastModified: new Date(),
       changeFrequency: "monthly",

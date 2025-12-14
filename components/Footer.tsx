@@ -19,7 +19,7 @@ export default function Footer({ t, locale }: FooterProps) {
   const footerLinks = {
     support: [
       { label: t.faq, href: "#faq" },
-      { label: t.contact, href: "mailto:support@chabis.app" },
+      { label: t.contact, href: `/${locale}/support` },
     ],
     legal: [
       { label: t.privacy, href: `/${locale}/privacy` },
