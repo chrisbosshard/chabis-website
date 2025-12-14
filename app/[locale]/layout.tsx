@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { locales, type Locale } from "@/lib/i18n/config";
+import { locales, type Locale, isValidLocale } from "@/lib/i18n/config";
 import { getTranslations } from "@/lib/i18n";
 
 const siteUrl = "https://chabis.app";
@@ -8,8 +8,9 @@ export async function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: Locale }> }): Promise<Metadata> {
-  const { locale } = await params;
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale: localeParam } = await params;
+  const locale = isValidLocale(localeParam) ? localeParam : "de";
   const t = getTranslations(locale);
 
   return {
@@ -65,12 +66,14 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: L
       languages: {
         de: `${siteUrl}/de`,
         en: `${siteUrl}/en`,
+        fr: `${siteUrl}/fr`,
+        it: `${siteUrl}/it`,
       },
     },
     category: "Food & Drink",
   };
 }
 
-export default async function LocaleLayout({ children }: { children: React.ReactNode; params: Promise<{ locale: Locale }> }) {
+export default async function LocaleLayout({ children }: { children: React.ReactNode }) {
   return <>{children}</>;
 }

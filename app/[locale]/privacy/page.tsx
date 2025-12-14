@@ -1,11 +1,12 @@
-import { type Locale } from "@/lib/i18n/config";
+import { type Locale, isValidLocale } from "@/lib/i18n/config";
 import { getLegalTranslations } from "@/lib/i18n/legal";
 import { getTranslations } from "@/lib/i18n";
 import Link from "next/link";
 import Image from "next/image";
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: Locale }> }) {
-  const { locale } = await params;
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale: localeParam } = await params;
+  const locale = isValidLocale(localeParam) ? localeParam : "de";
   const legal = getLegalTranslations(locale);
 
   return {
@@ -14,8 +15,9 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: L
   };
 }
 
-export default async function PrivacyPage({ params }: { params: Promise<{ locale: Locale }> }) {
-  const { locale } = await params;
+export default async function PrivacyPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale: localeParam } = await params;
+  const locale: Locale = isValidLocale(localeParam) ? localeParam : "de";
   const legal = getLegalTranslations(locale);
   const t = getTranslations(locale);
 
