@@ -217,7 +217,7 @@ export const de = {
       {
         question: "Funktioniert Chabis auch offline?",
         answer:
-          "Jein. Da unsere künstliche Intelligenz die Rezepte live für dich berechnet, benötigst du für die Generierung eine Internetverbindung. Aber: Alle Rezepte, die du in deinem Kochbuch gespeichert hast, sind auch offline verfügbar, damit du im Supermarkt oder im Funkloch problemlos kochen kannst.",
+          "Jein. Da unsere künstliche Intelligenz die Rezepte live für dich berechnet, benötigst du für die Generierung eine Internetverbindung. Aber: Alle Rezepte werden im Verlauf gespeichert und können ins Kochbuch übernommen werden. Diese sind dann auch offline verfügbar, damit du im Supermarkt oder im Funkloch problemlos kochen kannst.",
       },
       {
         question: "Welche Diäten werden unterstützt?",

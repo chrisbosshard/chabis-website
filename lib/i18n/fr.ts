@@ -221,7 +221,7 @@ export const fr: Translations = {
       {
         question: "Chabis fonctionne-t-il hors ligne?",
         answer:
-          "Oui et non. Comme notre IA calcule les recettes en direct pour vous, vous avez besoin d'une connexion internet pour la génération. Mais: Toutes les recettes que vous avez sauvegardées dans votre livre de recettes sont également disponibles hors ligne, pour que vous puissiez cuisiner sans problème au supermarché ou dans les zones sans signal.",
+          "Oui et non. Comme notre IA calcule les recettes en direct pour vous, vous avez besoin d'une connexion internet pour la génération. Mais: Toutes les recettes sont stockées dans votre historique et peuvent être sauvegardées dans votre livre de recettes. Celles-ci sont ensuite également disponibles hors ligne, pour que vous puissiez cuisiner sans problème au supermarché ou dans les zones sans signal.",
       },
       {
         question: "Quels régimes sont supportés?",

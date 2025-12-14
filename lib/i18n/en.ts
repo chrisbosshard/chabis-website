@@ -217,7 +217,7 @@ export const en: Translations = {
       {
         question: "Does Chabis work offline?",
         answer:
-          "Yes and no. Since our AI calculates recipes live for you, you need an internet connection for generation. But: All recipes you've saved in your cookbook are also available offline, so you can cook without problems in the supermarket or in areas with no signal.",
+          "Yes and no. Since our AI calculates recipes live for you, you need an internet connection for generation. But: All recipes are stored in your history and can be saved to your cookbook. These are then also available offline, so you can cook without problems in the supermarket or in areas with no signal.",
       },
       {
         question: "Which diets are supported?",

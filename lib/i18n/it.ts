@@ -218,7 +218,7 @@ export const it: Translations = {
       {
         question: "Chabis funziona offline?",
         answer:
-          "Sì e no. Poiché la nostra IA calcola le ricette in tempo reale per te, hai bisogno di una connessione internet per la generazione. Ma: Tutte le ricette che hai salvato nel tuo libro di ricette sono disponibili anche offline, così puoi cucinare senza problemi al supermercato o nelle zone senza segnale.",
+          "Sì e no. Poiché la nostra IA calcola le ricette in tempo reale per te, hai bisogno di una connessione internet per la generazione. Ma: Tutte le ricette vengono salvate nella cronologia e possono essere aggiunte al tuo libro di ricette. Queste sono poi disponibili anche offline, così puoi cucinare senza problemi al supermercato o nelle zone senza segnale.",
       },
       {
         question: "Quali diete sono supportate?",
