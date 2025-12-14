@@ -7,7 +7,7 @@ import type { Locale } from "@/lib/i18n/config";
 interface NavbarProps {
   t: {
     features: string;
-    testimonials: string;
+    support: string;
     faq: string;
   };
   locale: Locale;
@@ -19,7 +19,7 @@ export default function Navbar({ t, locale }: NavbarProps) {
 
   const navLinks = [
     { label: t.features, href: "#features" },
-    { label: t.testimonials, href: "#testimonials" },
+    { label: t.support, href: `/${locale}/support` },
     { label: t.faq, href: "#faq" },
   ];
 

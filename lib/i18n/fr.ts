@@ -11,7 +11,7 @@ export const fr: Translations = {
   // Navbar
   nav: {
     features: "Fonctionnalités",
-    testimonials: "Témoignages",
+    support: "Support",
     faq: "FAQ",
   },
 

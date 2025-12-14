@@ -9,7 +9,7 @@ export const de = {
   // Navbar
   nav: {
     features: "Features",
-    testimonials: "Testimonials",
+    support: "Support",
     faq: "FAQ",
   },
 
@@ -152,8 +152,8 @@ export const de = {
       title: "Deine Lieblingsrezepte immer dabei",
       description: "Speichere deine generierten Rezepte und greife jederzeit darauf zu. Organisiere sie in Kategorien und teile sie mit Familie.",
       features: ["Favoriten markieren und organisieren", "In Sammlungen gruppieren", "Mit Familie & Freunden teilen", "Cloud-Sync auf allen Geräten"],
-      image1: "/mockup-others.png",
-      image2: "/mockup-others-2.png",
+      image1: "/images/shopping_DE.png",
+      image2: "/images/history_DE.png",
     },
   ],
 

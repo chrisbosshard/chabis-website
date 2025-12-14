@@ -106,7 +106,8 @@ export default function Hero({ t }: HeroProps) {
               {t.subtitle}
             </p>
             <AppStoreBadges badge={t.appStoreBadge} alt={t.appStoreAlt} />
-            <SocialProofBadge text={t.ratingText} />
+            {/* Rating hidden until we have reviews */}
+            {/* <SocialProofBadge text={t.ratingText} /> */}
           </div>
 
           {/* Mobile Phone Mockup */}

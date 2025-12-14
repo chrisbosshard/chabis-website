@@ -10,7 +10,7 @@ export const en: Translations = {
   // Navbar
   nav: {
     features: "Features",
-    testimonials: "Testimonials",
+    support: "Support",
     faq: "FAQ",
   },
 
@@ -152,8 +152,8 @@ export const en: Translations = {
       title: "Your Favorite Recipes Always With You",
       description: "Save your generated recipes and access them anytime. Organize them in categories and share with family.",
       features: ["Mark and organize favorites", "Group in collections", "Share with family & friends", "Cloud sync on all devices"],
-      image1: "/mockup-others.png",
-      image2: "/mockup-others-2.png",
+      image1: "/images/shopping_EN.png",
+      image2: "/images/history_EN.png",
     },
   ],
 

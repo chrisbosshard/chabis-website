@@ -36,7 +36,8 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         <Features t={t.features} painSolutionT={t.painSolution} />
         <Lifestyle t={t.lifestyle} />
         <FeatureShowcase features={t.featureShowcase} />
-        <SocialProof t={t.socialProof} />
+        {/* Testimonials hidden until we have reviews */}
+        {/* <SocialProof t={t.socialProof} /> */}
         <FAQ t={t.faq} />
         <Footer t={t.footer} locale={locale} />
       </main>

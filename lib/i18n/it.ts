@@ -10,7 +10,7 @@ export const it: Translations = {
   // Navbar
   nav: {
     features: "Funzionalità",
-    testimonials: "Testimonianze",
+    support: "Supporto",
     faq: "FAQ",
   },
 
