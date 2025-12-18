@@ -39,7 +39,7 @@ export default function Footer({ t, locale }: FooterProps) {
             <p className="text-stone-400 mb-4 sm:mb-6 max-w-sm text-sm sm:text-base">{t.tagline}</p>
 
             {/* App Store Badges */}
-            <a href="https://apps.apple.com/app/chabis" target="_blank" rel="noopener noreferrer">
+            <a href="https://apps.apple.com/ch/app/chabis-dein-ai-koch-assistent/id6755774677#information" target="_blank" rel="noopener noreferrer">
               <img src={t.appStoreBadge} alt="Download on the App Store" className="h-10 sm:h-12" />
             </a>
           </div>

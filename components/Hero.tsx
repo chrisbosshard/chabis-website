@@ -54,7 +54,7 @@ const AppStoreBadges = ({ badge, alt }: { badge: string; alt: string }) => (
     className="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-3 mb-8 animate-fade-in-up"
     style={{ animationDelay: "0.2s" }}
   >
-    <a href="https://apps.apple.com/app/chabis" target="_blank" rel="noopener noreferrer">
+    <a href="https://apps.apple.com/ch/app/chabis-dein-ai-koch-assistent/id6755774677#information" target="_blank" rel="noopener noreferrer">
       <img src={badge} alt={alt} className="h-12" />
     </a>
   </div>
